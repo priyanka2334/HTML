@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .frist{
+            width: 60%;
+            margin: auto;
+            border: 2px solid black;
+        }
+        #fixd{
+            display: flex;
+            list-style: none;
+            background-color: rgb(58, 141, 33);
+            justify-content: space-between;
+            height: 5vh;
+            text-align: center;
+        }
+        header.fixd{
+            width: 59%;
+        }
+        li:hover{
+            color: white;
+        }
+        .h3{
+            text-align: center;
+        }
+        .float1{
+            display: flex;
+            gap: 20px;
+            font-size: 35px;
+            text-align: center;
+        }
+        .float{
+            font-size: 25px;
+        }
+        .float2{
+            display: flex;
+            font-size: 50px;
+            text-align: center;
+        }
+        .position{
+            display: flex;
+            height: 30vh;
+            width: 99%;
+            justify-content: space-evenly;
+           margin: 30px 20px 20px 0px;
+           background-color: rgb(135, 135, 220);
+        }
+        .position2{
+            display: flex;
+            height: 30vh;
+            width: 100%;
+            justify-content: space-evenly;
+           margin: 10px;
+        }
+        .section{
+            border: 3px solid rgb(244, 178, 11);
+            border-radius: 3px;
+            height: 5vh;
+            width: 4vw;
+            margin-top: 3px;
+        }
+        .big{ border: 4px solid red;
+            height: 25vh;
+            width: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+        .big4{
+            border: 4px solid purple;
+        }
+        .big5{
+            border: 4px solid purple;
+        }
+        .big6{
+            border: px solid purple;
+        }
+        .ele{
+            text-align: center;
+            padding-top: 40px;
+        }
+        .section6{
+            position: relative;
+            right: 30%;
+            bottom: 40px;
+        }
+        .section9{
+            position: relative;
+            bottom:40px;
+            left: 30%;
+        }
+        .section18{
+            position: relative;
+            right:55px;
+            bottom: 40px;
+        }
+        .section14{
+            position: relative;
+            left: 35px;
+            top: 25px;
+        }
+        .section19{
+            position: fixed;
+        }
+        div.sticky{
+            height: 30vh;
+            width: 20vw;
+           /* position: sticky; */
+           top: 0;
+           border: 2px solid black;
+           overflow: scroll;
+        }
+        div.section19{
+            position: fixed;
+            place-self: center;
+        }
+        .position1{
+            border: 4px solid purple;
+            height: 25vh;
+            width: 15vw;
+            overflow: scroll;
+            position: relative;
+            left: 35%;
+        }
+        div.section19{
+            border: 3px solid rgb(244, 178, 11);
+            height: 5vh;
+            width: 4vw;
+            position: sticky;
+            left: 40%;
+            top: 60px;
+            background-color: rgb(37, 91, 49);
+        }
+        .item1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            /* margin:10px 100px 70px 10px ; */
+            padding: 10px;
+        }
+        .item2{
+            display: flex;
+            justify-content: space-between;
+            margin: 3px 79px 3px 79px;
+            margin-top:10px ;
+        }
+        .item5{
+            display: flex;
+            justify-content: space-between;
+            /* margin-top:10px ; */
+            margin: 10px 75px 10px 75px;
+        }
+        .item4{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            /* position: relative;
+            left: 50%; */
+            gap: 3px;
+            margin-top:10px ;
+            background-color: rgb(135, 135, 220);
+        }
+        .item6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:20px 2px 20px 2px ;
+            gap: 6px;
+        }
+        .section48{
+            width: 27vw;
+            margin-top:5px ;
+        }
+        .position3{
+            height: 20VH;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            /* background-color: rgb(131, 131, 241); */
+            margin: 20px 2px 100px 2px;
+        }
+        .a{
+           background-color: rgb(131, 131, 241);  
+        }
+        .position4{
+            height:15VH;
+            display: flex; 
+            /* justify-content: center; */
+            align-items: center;
+            /* text-align: center; */
+            background-color: rgb(131, 131, 241); 
+            margin-top: 35px;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+        .big7{
+            height: 25vh;
+            width: 20px;
+            /* position: relative; */
+            /* bottom: 60PX; */
+            margin: 2px 2px 0px 2px ;
+
+        }
+        .main{
+            background-color: rgb(131, 131, 241); ;
+        }
+        .section:nth-child(odd){
+            background-color: rgb(37, 91, 49);
+        }
+        .section:nth-child(even){
+            background-color: rgb(162, 55, 55);
+        }
+        .header1{
+            /* background-color: black; */
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 25px;
+        }
+        hr{
+            border: 0.5px solid red;
+        }
+        i:hover{
+            color: white;
+        }
+        i{
+            font-size: 40px;
+            color: rgb(212, 91, 39);
+        }
+        button:hover{
+            background-color: palevioletred;
+        }
+        .button1{
+             height: 4vh;
+             width: 4vw;
+             border-right: none;
+             background-color: red;
+             border-radius: 20px 0px 0px 20px;
+             float: right;
+             /* position: fixed; */
+        }
+        .header1{
+           background-color: black;
+           height: 5vh;
+           width: 100%;
+       }
+       .fixed a{
+        border: 1px solid red;
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        float: right;
+        position: fixed;
+        right: 20%;
+        bottom: 10%;
+        /* width: 20px;
+        height: 10px; */
+       }
+        </style> 
+        <!-- this is s layout -->
+</head>
+<script src="https://kit.fontawesome.com/1ce671e465.js" crossorigin="anonymous"></script>
+<body>
+    <div class="frist">
+          <!-- div of header -->
+        <header id="fixd">
+            <div class="float">
+            <li>FLOAT , POSITION & FLEX</li>
+            </div>
+            <div class="float1">
+                <li>home</li>
+                <li>About</li>
+                <li>Services</li>
+            </div>
+            <div class="float2">
+                <button>signup</button>
+                <button>Login</button>
+            </div>
+        </header>
+        <!-- using float -->
+            <div class="ele">
+             <h3>positioning elements using floats</h3>
+            </div>
+            <div class="position">
+                <div class="big big1">
+                    <div class="section section1">Section 1</div>
+                    <div class="section section2">section 2</div>
+                    <div class="section section3">section 3</div>
+                </div>
+                <div class="big big2">
+                    <div class="section section4">section 1</div>
+                    <div class="section section5">section 2</div>
+                    <div class="section section6">section 3</div>
+                </div>
+                <div class="big big3">
+                    <div class="section section7">section 1</div>
+                    <div class="section section8">section 2</div>
+                    <div class="section section9">section 3</div>
+                </div>
+            </div>
+        <!-- position content -->
+        <div class="ele">
+            <h3>UNIQUELY POSITIONING COTENT</h3>
+           </div>
+        <div class="position2">
+            <div class="big big4">
+                <div class="section section10">section 1</div>
+                <div class="section section11">section 2</div>
+                <div class="section section12">section 3</div>
+            </div>
+            <div class="big big5">
+                <div class="section section13">section 1</div>
+                <div class="section section14">section 2</div>
+                <div class="section section15">section 3</div>
+            </div>
+            <div class="big big6">
+                <div class="section section16">section 1</div>
+                <div class="section section17">section 2</div>
+                <div class="section section18">section 3</div>
+            </div>
+        </div>
+         <!-- second position -->
+        <div class="position1">
+            <div class="section19">section2</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quasi illo excepturi accusantium veniam veritatis voluptatum incidunt, dolore vel odio sunt, totam dolorum explicabo ipsa voluptas nemo dolor voluptates. Assumenda voluptatum cupiditate numquam unde similique, quas maiores. Est, expedita consequuntur, quaerat accusamus ducimus sunt incidunt dolores dolor ullam aperiam magni animi illum fuga tempore sapiente repellendus laboriosam cumque perferendis hic exercitationem maiores dolore esse iusto. Aut exercitationem reprehenderit iste, placeat consectetur beatae earum magnam nemo laborum facilis veniam ducimus nisi delectus repellendus voluptatum ipsum culpa, sint incidunt. Nesciunt saepe sed maiores id sunt eius vel. Sint fuga necessitatibus dolorum perferendis magni quia assumenda quas fugiat expedita aspernatur modi porro dicta, excepturi sapiente. Hic eum voluptate, magnam id repudiandae officiis iusto voluptatum non blanditiis distinctio ullam repellat laboriosam labore earum error explicabo quia vel ex similique! Omnis temporibus facilis nobis sapiente architecto vel repellendus. Alias, dolore quo, facilis minima veritatis vero asperiores perferendis veniam quibusdam velit distinctio sit reprehenderit illum recusandae modi ipsum consequatur ad earum unde eligendi officiis? Itaque quidem ad quibusdam ut sunt explicabo praesentium architecto doloremque, placeat est harum minima facilis maxime, vero amet quo aspernatur culpa natus exercitationem labore quasi at reiciendis cum. Voluptate, explicabo eum itaque hic libero consectetur officia reprehenderit quia beatae nam enim maiores aliquid sed iusto? Vero consequatur tenetur culpa adipisci perferendis tempora modi! Nam dolorem doloremque ea consectetur, excepturi assumenda? Hic, quae aut! Unde, nihil. Asperiores, nulla quae? Fuga molestiae molestias beatae dolorum nisi accusantium odit soluta incidunt, in itaque architecto temporibus adipisci! Vero fugit ex obcaecati eos odio minus accusamus magnam deleniti libero molestiae natus, vel facere mollitia repudiandae praesentium adipisci unde. Atque reprehenderit fugiat fugit ducimus. Sed labore numquam veritatis facilis sit est? Quo cumque exercitationem repellat aliquam porro adipisci distinctio corporis ipsa corrupti molestias ea, aliquid enim soluta debitis placeat, consequatur eum iure, nisi iusto cupiditate quos. Tempore fugit, quisquam voluptas commodi provident quod nam placeat officia pariatur assumenda architecto iure enim excepturi consequatur ea amet hic mollitia laudantium ab. Debitis, mollitia? Odio aperiam excepturi vel, laudantium possimus quaerat doloribus accusantium cumque assumenda illo exercitationem, necessitatibus sit pariatur. Cum eveniet saepe ab id enim sunt deserunt facilis tenetur, vero earum voluptate dolore. Dolorum, eaque? Nemo aperiam incidunt quod. Aperiam obcaecati vel nobis error labore dolorem quae reiciendis veniam. Voluptatibus magni eum temporibus voluptatem ipsam reprehenderit illo delectus vel quisquam dolorem nostrum odit tenetur ipsum voluptatum sequi aspernatur quaerat enim maxime autem ab necessitatibus laborum, corrupti culpa. Harum odit quidem nulla vitae consectetur ullam totam modi obcaecati! Tempora ut exercitationem similique accusamus veniam temporibus quis id quasi ducimus fugiat repellat sed iste dolores est porro, rerum eaque esse illo nulla! Quidem amet architecto rerum explicabo iure reprehenderit ipsa eum, perspiciatis nobis cupiditate eaque, ratione animi? Aspernatur nemo at laudantium hic cum doloremque officiis quisquam soluta. Excepturi, accusantium? Corporis praesentium a officiis illo molestiae laboriosam odit omnis? Hic ipsum eius voluptatem sit nulla et sed deleniti commodi quae ratione, adipisci distinctio unde blanditiis quisquam sapiente, ab rem repellendus voluptatibus soluta molestias?</p>
+        </div>
+        <!-- position with flex -->
+        <!-- <br><br> -->
+        <div class="ele">
+            <h3>POSITIONING WITH FLEX</h3>
+            </div>
+            <div class="a">
+        <div class="position3">
+            <div class="big1 big7">
+            <div class="section section20">section1</div>
+            <div class="section section21">section2</div>
+            <div class="section section22">section3</div>
+            <div class="section section23">section4</div>
+            <div class="section section24">section5</div>
+            </div>
+            </div>
+            <hr>
+            <!-- item 1 to 10 -->
+            <!-- <div class="main"> -->
+            <div class="item1">
+                <div class="section section25"> item 1</div>
+                <div class="section section26"> item 2</div>
+                <div class="section section27"> item 3</div>
+                <div class="section section28"> item 4</div>
+                <div class="section section29"> item 5</div>
+                <div class="section section30"> item 6</div>
+                <div class="section section31"> item 7</div>
+                <div class="section section32"> item 8</div>
+                <div class="section section33"> item 9</div>
+                <div class="section section34"> item 10</div>
+            </div>
+            <!-- second item 1 to 10 -->
+            <div class="item1">
+                <div class="section section35"> item 11</div>
+                <div class="section section36"> item 12</div>
+                <div class="section section37"> item 13</div>
+                <div class="section section38"> item 14</div>
+                <div class="section section39"> item 15</div>
+                <div class="section section40"> item 16</div>
+                <div class="section section41"> item 17</div>
+                <div class="section section42"> item 18</div>
+                <div class="section section43"> item 19</div>
+                <div class="section section44"> item 20</div>
+            </div>
+            <!-- item 21 22 -->
+            <div class="item2">
+                <div class="section section45"> item 21</div>
+                <div class="section section46"> item 22</div>
+            </div>
+            <hr><hr>
+            <div class="item6">
+                <div class="section section46"> item 5</div>
+               <div class="section section47"> item 1</div>
+               <div class="section section48"> item 4</div>
+               <div class="section section49"> item 3</div>
+               <div class="section section50"> item 4</div>
+            </div>
+            <hr><hr>
+            <div class="item5">
+                <div class="section section51"> item 1</div>
+                <div class="section section52"> item 2</div>
+                <div class="section section53"> item 3</div>
+                <div class="section section54"> item 4</div>
+                <div class="section section55"> item 5</div>
+            </div>
+            <div class="fixed">
+                <a href="#fixd">Button</a>
+            </div>
+            <div class="item1">
+                <div class="section section44"> item 6</div>
+            </div>
+            </div>
+            <div>New</div>
+            <!-- this is image -->
+        <header class="header1">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </header>
+    </div>
+</body>
+</html>
+
+<!-- git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/priyanka2334/first-project.git
+git push -u origin main -->
